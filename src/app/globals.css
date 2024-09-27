@@ -25,3 +25,48 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Custom scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin; /* For Firefox */
+}
+
+.scrollbar-thumb {
+  background-color: #4a5568; /* Customize thumb color */
+  border-radius: 9999px; /* Make it rounded */
+}
+
+.scrollbar-track {
+  background-color: #000; /* Customize track color */
+  border-radius: 9999px; /* Make it rounded */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Customize thumb color */
+  border-radius: 9999px; /* Make it rounded */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000; /* Customize track color */
+  border-radius: 9999px; /* Make it rounded */
+}
+
+/* Embla Carousel Styles */
+.embla {
+  position: relative;
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  will-change: transform;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 100%;
+}
