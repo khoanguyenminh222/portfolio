@@ -4,7 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 function ProjectChild({ carouselImages, projectName, projectDetails, avatars, infoLink }) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 10000 })])
@@ -53,12 +53,12 @@ function ProjectChild({ carouselImages, projectName, projectDetails, avatars, in
                         ))}
                     </div>
 
-                    <p className="text-base lg:text-center text-left">
+                    <p className="text-base text-left">
                         {projectDetails}
                     </p>
 
-                    <a href={infoLink} className="inline-flex items-center gap-2 py-2 mb-4 lg:mb-0 text-teal-500 bg-gray-800 hover:bg-gray-700 rounded-lg ">
-                        <span className="text-base">Read case study</span>
+                    <a href={infoLink} className="inline-flex items-center gap-2 py-2 px-4 mb-4 lg:mb-0 text-teal-500 bg-gray-800 hover:bg-gray-700 rounded-lg ">
+                        <span className="text-base">See detailed information</span>
                         <FontAwesomeIcon icon={faChevronRight} fontSize={14} />
                     </a>
                 </div>
