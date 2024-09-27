@@ -18,12 +18,12 @@ function ProjectChild({ carouselImages, projectName, projectDetails, avatars, in
     }, [emblaApi]);
     return (
         <>
-            <div className="relative w-full overflow-hidden lg:mt-14 mt-10">
+            <div className="relative w-full overflow-hidden">
                 <div className="embla" ref={emblaRef}>
                     <div className="embla__container">
                         {carouselImages.map((image, index) => (
-                            <div key={index} className="embla__slide flex justify-center items-center bg-gradient-to-r from-gray-300 via-gray-200 to-gray-100">
-                                <img src={image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover" />
+                            <div key={index} className="embla__slide flex justify-center items-center bg-gradient-to-r from-gray-300 via-gray-200 to-gray-100 rounded-3xl">
+                                <img src={image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover rounded-3xl" />
                             </div>
                         ))}
                     </div>

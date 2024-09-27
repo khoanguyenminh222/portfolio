@@ -2,6 +2,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 config.autoAddCss = false
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,7 +27,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scrollbar`}
       >
-        {children}
+        <div className="bg-gradient-to-tr from-black via-black to-indigo-900 text-white font-mono">
+          <Header />
+          <div className="px-6 lg:px-40 pt-16 pb-8">
+            {children}
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
