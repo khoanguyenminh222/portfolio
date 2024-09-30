@@ -11,22 +11,30 @@ const Sidebar = () => {
             <div className="flex flex-col gap-12">
                 <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('introduction')}>
                     <div className="flex bg-gray-300" style={{ width: '2rem', height: '0.25rem' }}></div>
-                    <span className="text-lg font-semibold">Introduction</span>
+                    <span className="text-sm font-semibold">Introduction</span>
                 </div>
                 <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('work-experience')}>
                     <div className="flex bg-gray-300" style={{ width: '2rem', height: '0.25rem' }}></div>
-                    <span className="text-lg font-semibold">Work Experience</span>
+                    <span className="text-sm font-semibold">Work Experience</span>
                 </div>
-                <div className="flex flex-col gap-12 pl-10">
+                <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('Studies')}>
+                    <div className="flex bg-gray-300" style={{ width: '2rem', height: '0.25rem' }}></div>
+                    <span className="text-sm font-semibold">Studies</span>
+                </div>
+                <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('technical-skills')}>
+                    <div className="flex bg-gray-300" style={{ width: '2rem', height: '0.25rem' }}></div>
+                    <span className="text-sm font-semibold">technical-skills</span>
+                </div>
+                {/* <div className="flex flex-col gap-12 pl-10">
                     <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('studies')}>
                         <div className="flex bg-gray-300" style={{ width: '1rem', height: '0.25rem' }}></div>
-                        <span className="text-sm">Studies</span>
+                        <span className="text-xs">Studies</span>
                     </div>
                     <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('technical-skills')}>
                         <div className="flex bg-gray-300" style={{ width: '1rem', height: '0.25rem' }}></div>
-                        <span className="text-sm">Technical Skills</span>
+                        <span className="text-xs">Technical Skills</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

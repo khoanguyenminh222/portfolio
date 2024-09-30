@@ -70,3 +70,12 @@ body {
   flex: 0 0 100%;
   min-width: 100%;
 }
+
+header {
+  padding: 1.5rem; /* Padding mặc định */
+  transition: padding 0.3s ease; /* Thay đổi padding mượt mà */
+}
+
+header.scrolled {
+  padding: 0.5rem; /* Padding khi cuộn trang */
+}
